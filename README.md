@@ -1,3 +1,14 @@
+# My own readme
+
+To build blender container:
+```
+cd my-templates/blender/
+docker buildx bake -f docker-bake.hcl blender
+```
+(this didnt work for me, if I ran from route, with full path to the hcl file; I'm a buildx noob. Never used it before..)
+
+# Original Readme below:
+
 # RunPod Containers
 
 This repository contains the Dockerfiles for the RunPod containers used for our official templates. Resulting containers are available on [Docker Hub](https://hub.docker.com/u/runpod).

@@ -1,3 +1,7 @@
 *.ckpt
 *.safetensors
 *.pth
+
+gitlog.txt
+gitdiff.txt
+
