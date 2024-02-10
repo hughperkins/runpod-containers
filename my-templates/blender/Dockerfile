@@ -67,7 +67,7 @@ RUN echo 'cat /etc/runpod.txt' >> /root/.bashrc
 RUN echo 'echo -e "\nFor detailed documentation and guides, please visit:\n\033[1;34mhttps://docs.runpod.io/\033[0m and \033[1;34mhttps://blog.runpod.io/\033[0m\n\n"' >> /root/.bashrc
 
 RUN pwd && \
-    wget -nc https://ftp.halifax.rwth-aachen.de/blender/release/Blender4.0/blender-4.0.2-linux-x64.tar.xz -o /workspace/blender-4.0.2-linux-x64.tar.xz && \
+    wget https://ftp.halifax.rwth-aachen.de/blender/release/Blender4.0/blender-4.0.2-linux-x64.tar.xz -O /workspace/blender-4.0.2-linux-x64.tar.xz && \
     ls /workspace && \
     mkdir /workspace/blender && tar xf /workspace/blender-4.0.2-linux-x64.tar.xz -C /workspace/blender --strip-components 1 --checkpoint=.1000 && \
     rm /workspace/blender-4.0.2-linux-x64.tar.xz
