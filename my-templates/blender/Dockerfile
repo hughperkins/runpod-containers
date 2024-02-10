@@ -74,6 +74,8 @@ RUN pwd && \
 
 COPY run_blender.ipynb /workspace
 COPY set_gpu.py /workspace
+COPY bake_fluid.py /workspace
+COPY bake_ptcache.py /workspace
 
 # Set the default command for the container
 CMD [ "/start.sh" ]
