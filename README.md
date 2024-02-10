@@ -4,6 +4,8 @@ To build blender container:
 ```
 cd my-templates/blender/
 docker buildx bake -f docker-bake.hcl blender
+docker login
+docker push docker.io/hughperkins/blender
 ```
 (this didnt work for me, if I ran from route, with full path to the hcl file; I'm a buildx noob. Never used it before..)
 
